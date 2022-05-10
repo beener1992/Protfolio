@@ -1,0 +1,152 @@
+*{
+    margin: 0px; 
+}
+
+body{
+    background-image: url("https://images.pexels.com/photos/904177/pexels-photo-904177.jpeg");
+    opacity: 0.9;
+    background-color: rgba(91, 102, 97, 0.904);
+    background-position: center;
+}
+
+header{
+    background-color: rgba(193, 210, 211, 0.815);
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    padding: 1% 1%;
+    flex-wrap: wrap;
+}
+
+header h1{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.nav-item{
+    margin: 3px;
+    flex-wrap: wrap;
+    color: rgb(48, 46, 54);
+}
+
+.nav-item:hover{
+    color: rgb(4, 44, 44);
+}
+
+.nav-item:active{
+    font-size: 105%;
+    text-shadow: 0 0 5px rgb(3, 70, 70);
+}
+
+.hero{
+    background-image: url("https://img.freepik.com/free-photo/dirty-pattern-paint-room-block_1203-5709.jpg?t=st=1651968483~exp=1651969083~hmac=81326c95f3310720eba4b9d6d357b3d5f4c21786a4c121594a93cc3dbc05c88a&w=1380");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hero img{
+    width: 25%;
+    height: 25%;
+}
+
+span[data-descr]{
+    position: relative;
+    text-decoration: underline;
+    color: black;
+    cursor: grab;
+}
+
+span[data-descr]:hover::after{
+    content: attr(data-descr);
+    position: absolute;
+    left: 0px;
+    bottom: 24px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    border-radius: 8px;
+    background-color: gray;
+    padding: 12px;
+    color: white;
+    font-size: 14px;
+    z-index: 0;
+}
+
+.main-content{
+    margin: 10% 8vh;
+    border: 8px solid black;
+    padding: 100px 100px;
+}
+
+.projectItems{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 0 20px 0;
+        margin: 0.5em;
+        text-decoration: none;
+        font-size: 0.9rem;
+        background-image: url(https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg);
+        border: 5px solid black;
+        color: black;
+    }
+
+#project1:hover{
+    height: 25vh;
+    font-size: x-large;
+}
+
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 3px;
+}
+
+.footerItems{
+    margin: 3px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.footerItems:hover{
+    color: rgb(4, 44, 44);
+}
+
+.footerItems:active{
+    font-size: 105%;
+    text-shadow: 0 0 5px rgb(3, 70, 70);
+}
+
+@media screen and (max-width: 992px) {
+    .hero{
+        margin: 1vh;
+    }
+
+    .main-content{
+        margin: 1vh;
+    }
+
+    .projectItems{
+        height: 100px;
+    }
+}
